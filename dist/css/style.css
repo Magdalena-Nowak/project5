@@ -119,4 +119,14 @@ body {
 .btn-slice:hover::after {
   transform: translateX(-100%);
 }
+
+.btn-hmm {
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hmm:hover {
+  border-top: none;
+  border-left: none;
+  box-shadow: inset 2px 2px 2px 2px #141414;
+}
 /*# sourceMappingURL=style.css.map */
