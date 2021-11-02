@@ -37,7 +37,7 @@ body {
     &::after,
     &::before {
       content: "";
-      background-color: aquamarine;
+      background-color: aliceblue;
       position: absolute;
       transition: transform 0.8s ease-in-out;
     }
@@ -78,6 +78,32 @@ body {
     }
     &:hover span:first-child {
       transform: translate(85px, 60px);
+    }
+  }
+  &-slice {
+    &::before,
+    &::after {
+      width: 120%;
+      height: 50%;
+      content: "";
+      background-color: aqua;
+      position: absolute;
+      z-index: -1;
+      transition: transform 0.8s ease-in-out;
+    }
+    &::before {
+      top: 0;
+      left: -120%;
+    }
+    &::after {
+      bottom: 0;
+      right: -120%;
+    }
+    &:hover::before {
+        transform: translateX(100%);
+    }
+    &:hover::after {
+        transform: translateX(-100%);
     }
   }
 }
