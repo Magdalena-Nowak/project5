@@ -100,10 +100,18 @@ body {
       right: -120%;
     }
     &:hover::before {
-        transform: translateX(100%);
+      transform: translateX(100%);
     }
     &:hover::after {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  &-hmm {
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      border-top: none;
+      border-left: none;
+      box-shadow: inset 2px 2px 2px 2px rgb(20, 20, 20);
     }
   }
 }
