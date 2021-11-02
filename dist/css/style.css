@@ -40,7 +40,7 @@ body {
 
 .btn-slide::after, .btn-slide::before {
   content: "";
-  background-color: aquamarine;
+  background-color: aliceblue;
   position: absolute;
   transition: transform 0.8s ease-in-out;
 }
@@ -90,5 +90,33 @@ body {
 
 .btn-slide:hover span:first-child {
   transform: translate(85px, 60px);
+}
+
+.btn-slice::before, .btn-slice::after {
+  width: 120%;
+  height: 50%;
+  content: "";
+  background-color: aqua;
+  position: absolute;
+  z-index: -1;
+  transition: transform 0.8s ease-in-out;
+}
+
+.btn-slice::before {
+  top: 0;
+  left: -120%;
+}
+
+.btn-slice::after {
+  bottom: 0;
+  right: -120%;
+}
+
+.btn-slice:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-slice:hover::after {
+  transform: translateX(-100%);
 }
 /*# sourceMappingURL=style.css.map */
